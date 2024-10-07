@@ -15,5 +15,5 @@ app.set('view engine', 'ejs')
 app.use(indexRoutes)
 app.use(express.static(join(__dirname, 'public')))
 
-app.listen(3000)
-console.log('listening on port', 3000)
+app.listen(process.en.PORT || 3000)
+console.log('listening on port', process.en.PORT)
